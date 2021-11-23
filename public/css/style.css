@@ -1,0 +1,59 @@
+.textEmblema{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cuadroSubida{
+    width:655px;
+    height: 450px;
+    display:flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+    
+}
+.tarjeta{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.dragContainer{
+    border-top: 1.5px black dashed;
+    border-left: 1.5px black dashed;
+    border-bottom: 1.5px black dashed;
+    padding: 10%;
+    
+}
+.dragContainer:hover{
+    border-top: 2px rgb(221, 16, 16) dashed;
+    border-left: 2px rgb(235, 24, 24) dashed;
+    border-bottom: 2px rgb(231, 23, 23) dashed;
+    padding: 10%;
+}
+.btnAndFileContainer{
+    border: 1px black solid;
+}
+.slashTexto{
+    border: 1px black dashed;
+    padding: 3%;
+    text-align: center;
+    border-radius: 10px;
+}
+#inputGroupFile01{
+    cursor: pointer;
+}
+
+.imagenprof{
+    margin: 0;
+    position: absolute;
+    top: 78%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#pruebaSel{
+    border: 2px black solid;
+    width: 200px;
+    height: 100px;
+}

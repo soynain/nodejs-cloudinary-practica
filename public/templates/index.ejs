@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <title>Galeria Principal</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-light bg-light">
+            <ol class="nav-item dropdown mb-0">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Acerca
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </ol>
+            <span class="navbar-brand mb-0 h1">Image Uploader</span>
+            <div>
+                <button type="button" class="btn btn-success">Registrarse</button>
+                <button type="button" class="btn btn-link">Iniciar sesión</button>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <div class="container d-flex justify-content-center align-items-center vh-100 tarjeta">
+        <div class="cuadroSubida">
+            <div class="dragContainer d-flex justify-content-center align-items-center" ondrop="dropHandler(event)"
+                ondragover="allowDrop(event)">
+                <p class="slashTexto">Arrastra tu imágen aquí</p>
+            </div>
+            <div class="btnAndFileContainer d-flex justify-content-center align-items-center">
+                <div class="container">
+                    <div class="d-flex flex-row justify-content-center">
+                        <p class="text-center">ó</p>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <form id="formImg" action="img/upload" method="post" enctype="multipart/form-data">
+                            <div class="container">
+                                <div class="row justify-content-center mb-3">
+                                    <button class="btn btn-info" type="submit">Subir im&aacute;gen</button>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <!--<input type="file" name="imagenSubida" >-->
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input imgSend" name="imagenSubida">
+                                        <label class="custom-file-label" for="inputGroupFile01">Selecciona una
+                                            imágen</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-center align-items-center vh-100 imagenprof">
+        <img id="pruebaSel" src="" alt="sdad">
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="/javascript/drag-drop.js"></script>
+</body>
+
+</html>
